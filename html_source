@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect & Buy</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7F7FD5; /* Use the color seen in the image */
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .email-form {
+            margin-top: 20px;
+        }
+        input[type=email] {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 20px;
+        }
+        input[type=submit] {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 20px;
+            background-color: white;
+            color: #7F7FD5;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #6c6cb2;
+        }
+        /* Add more styling as per your design */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Connect & Buy</h1>
+        <p>Real People! Real Opinion! Real Rewards!</p>
+        <p>Conbuy is a platform to share about your purchases to let your friends, family & loved ones make informed decisions. Also, it helps you earn rewards for those reviews.</p>
+        <div class="user-engagement">
+            <p>We're an early stage project, if you would like to help us in User Research, Product Reviews, or anything, Please provide your email below.</p>
+            
+            <!-- Google Forms Embed Code -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDkkjHu5mXoAo622UvFy4PKesce_vdiFvZcAAgFEZABHEmDA/viewform?embedded=true" width="640" height="480"></iframe>
+
+            <!-- Add more of your website content here -->
+            
+        </div>
+    </div>
+</body>
+</html>
+

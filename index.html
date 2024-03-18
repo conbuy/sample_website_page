@@ -12,18 +12,30 @@
         background-color: #7D6EFE; /* Adjust the color to match your brand */
         color: #FFFFFF;
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         height: 100vh;
         text-align: center;
     }
-    .container {
-        max-width: 800px;
-        padding: 20px;
+    .content-container {
+        display: flex;
+        max-width: 1200px; /* Adjust as needed */
         border-radius: 8px;
-        background-color: #FFFFFF; /* Background color for the form container */
-        color: #000000; /* Text color for the content inside the form container */
+        overflow: hidden;
+    }
+    .text-container {
+        background-color: #7D6EFE; /* Background color for the text container */
+        color: #FFFFFF; /* Text color for the text container */
+        padding: 20px;
+        width: 50%; /* Adjust width as needed */
+        box-sizing: border-box;
+    }
+    .form-container {
+        background-color: #7D6EFE; /* Background color for the form container */
+        color: #000000; /* Text color for the form container */
+        padding: 20px;
+        width: 50%; /* Adjust width as needed */
+        box-sizing: border-box;
     }
     h1 {
         font-size: 3em; /* Adjust size as needed */
@@ -38,18 +50,29 @@
         height: 500px; /* Adjust height as needed */
         border: none;
     }
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 50px; /* Adjust size as needed */
+        height: auto;
+    }
 </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Connect & Buy</h1>
-    <p>Real People! Real Opinion! Real Rewards!</p>
-    <p>Conbuy is a platform to share about your purchases to let your friends, family & loved ones make informed decisions. Also, it helps you earn rewards for those reviews.</p>
-    <!-- The paragraph about the early stage project will be just above the iframe -->
-    <p>We're an early stage project, if you would like to help us in User Research, Product Reviews, or anything, Please provide your email below.</p>
-    <!-- Embed Google Form -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDkkjHu5mXoAo622UvFy4PKesce_vdiFvZcAAgFEZABHEmDA/viewform?embedded=true"></iframe>
+<img src="logo_page.png" alt="Conbuy Logo" class="logo"> <!-- Add your logo image path here -->
+
+<div class="content-container">
+    <div class="text-container">
+        <h1>Connect & Buy</h1>
+        <p>Real People! Real Opinion! Real Rewards!</p>
+        <p>Conbuy is a platform to share about your purchases to let your friends, family & loved ones make informed decisions. Also, it helps you earn rewards for those reviews.</p>
+    </div>
+    <div class="form-container">
+        <!-- Embed Google Form -->
+        <iframe src="YOUR_GOOGLE_FORM_EMBED_LINK"></iframe>
+    </div>
 </div>
 
 </body>

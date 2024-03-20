@@ -4,31 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Conbuy - Connect & Buy</title>
-<!-- Include your CSS styles here -->
-<script>
-// This function will handle the form submission
-function handleFormSubmit(event) {
-    event.preventDefault(); // Stop the form from submitting the default way
-
-    var form = event.target;
-    var formData = new FormData(form);
-
-    fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors' // Prevents CORS errors
-    }).then(response => {
-        console.log('Form successfully submitted');
-        document.getElementById('form-container').innerHTML = '<p>Thanks! We\'ll reach out to you soon!</p>';
-    }).catch(error => {
-        console.error('Error:', error);
-    });
-}
-</script>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Conbuy - Connect & Buy</title>
 <style>
     body {
         font-family: Arial, sans-serif;

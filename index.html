@@ -4,6 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Conbuy - Connect & Buy</title>
+<!-- Include your CSS styles here -->
+<script>
+// This function will handle the form submission
+function handleFormSubmit(event) {
+    event.preventDefault(); // Stop the form from submitting the default way
+
+    var form = event.target;
+    var formData = new FormData(form);
+
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors' // Prevents CORS errors
+    }).then(response => {
+        console.log('Form successfully submitted');
+        document.getElementById('form-container').innerHTML = '<p>Thanks! We\'ll reach out to you soon!</p>';
+    }).catch(error => {
+        console.error('Error:', error);
+    });
+}
+</script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conbuy - Connect & Buy</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -93,7 +118,7 @@
         We’re an early stage project, if you would like to help us in User Research, Product Reviews, or anything, Please provide your email below.
     </div>
     <div class="form-container">
-        <form action="https://docs.google.com/forms/d/e/1YC2emgZ5FQzMhAFIruYX-0Bbx_o1E2QoLeqJ0YX2Kqk/formResponse" method="post" target="_self">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScDkkjHu5mXoAo622UvFy4PKesce_vdiFvZcAAgFEZABHEmDA/formResponse" method="post" target="_self">
             <input type="text" name="entry.2005620554" placeholder="First Name" required>
             <input type="email" name="entry.1941118552" placeholder="Email" required>
             <input type="submit" value="Join Now">

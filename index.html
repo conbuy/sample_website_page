@@ -49,6 +49,16 @@ function handleFormSubmit(event) {
         left: 20px;
         width: 150px; /* Adjust as needed */
         height: auto;
+        transition: width 0.5s, top 0.5s, left 0.5s; /* Smooth transition */
+    }
+
+    /* Adjust the logo for smaller screens */
+    @media (max-width: 768px) {
+        .logo {
+            top: 10px;
+            left: 10px;
+            width: 100px; /* Smaller size for smaller screens */
+        }
     }
     .header {
         font-size: 2.5rem;
